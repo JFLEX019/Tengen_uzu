@@ -1,5 +1,5 @@
 import { IContact } from '../Types'
-import { Contact as contact } from '@adiwajshing/baileys'
+import { Contact as contact } from '@whiskeysockets/baileys'
 import { Database, Client } from '.'
 
 export class Contact {
