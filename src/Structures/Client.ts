@@ -2,7 +2,7 @@ import chalk from 'chalk'
 import { config as Config } from 'dotenv'
 import EventEmitter from 'events'
 import TypedEventEmitter from 'typed-emitter'
-import Baileys, { DisconnectReason, fetchLatestBaileysVersion, ParticipantAction, proto } from '@adiwajshing/baileys'
+import Baileys, { DisconnectReason, fetchLatestBaileysVersion, ParticipantAction, proto } from '@whiskeysockets/baileys'
 import P from 'pino'
 import { connect } from 'mongoose'
 import { Boom } from '@hapi/boom'
@@ -17,7 +17,7 @@ export class Client extends (EventEmitter as new () => TypedEventEmitter<Events>
         super()
         Config()
         this.config = {
-            name: process.env.BOT_NAME || 'Luffy-dreaded',
+            name: process.env.BOT_NAME || 'Elaina',
             session: process.env.SESSION || 'el',
             prefix: process.env.PREFIX || '.',
             chatBotUrl: process.env.CHAT_BOT_URL || '',
