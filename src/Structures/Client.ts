@@ -17,11 +17,11 @@ export class Client extends (EventEmitter as new () => TypedEventEmitter<Events>
         super()
         Config()
         this.config = {
-            name: process.env.BOT_NAME || 'Elaina',
-            session: process.env.SESSION || 'el',
+            name: process.env.BOT_NAME || 'maria',
+            session: process.env.SESSION || 'jflex',
             prefix: process.env.PREFIX || '.',
             chatBotUrl: process.env.CHAT_BOT_URL || '',
-            mods:  (process.env.MODS || '').split(', ').map((user) => `${user}@s.whatsapp.net`),
+            mods:  (process.env.MODS || '255788187693').split(', ').map((user) => `${user}@s.whatsapp.net`),
             PORT: Number(process.env.PORT || 3000),
             casinoGroup: '120363037700352694@g.us',
             supportGroups: ['120363037700352694@g.us'],
